@@ -1,0 +1,22 @@
+各种环境启动
+
+zookeeper
+/usr/local/zookeeper-3.4.6/bin/zkServer.sh start
+
+Tomcat-dubbo
+/usr/local/web/tomcat-dubbo-monitor/bin/startup.sh
+
+# 如果防火墙没有关闭记得关闭；
+#停止firewall
+systemctl stop firewalld.service
+#禁止firewall开机启动
+systemctl disable firewalld.service
+
+
+//Mac OS 安装U盘启动盘
+sudo  /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/GouZi --application /Applications/Install\ macOS\ High\ Sierra.app/ --nointeraction
+
+//Maven jdk设置
+<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
